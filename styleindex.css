@@ -4,17 +4,20 @@ body {
     padding: 0;
     background-color: #f8c1c1;
 }
+
 .header {
     background-color: white;
     padding: 20px;
     text-align: center;
 }
+
 .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .logo a {
     display: flex;
     align-items: center;
@@ -25,10 +28,12 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
+
 .logo img {
     width: 50px;
     margin-bottom: 10px;
 }
+
 .nav {
     display: flex;
     justify-content: center;
@@ -36,6 +41,7 @@ body {
     flex-wrap: wrap;
     margin-top: 10px;
 }
+
 .nav a {
     text-decoration: none;
     color: black;
@@ -43,15 +49,18 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
+
 .nav a:hover {
     background-color: orange;
     color: white;
 }
+
 .pesquisa {
     display: flex;
     justify-content: center;
     margin: 20px;
 }
+
 .pesquisa input {
     width: 100%;
     max-width: 300px;
@@ -59,30 +68,35 @@ body {
     border-radius: 20px;
     border: 1px solid #ccc;
 }
+
 .container {
     background-color: white;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
 }
+
 .titulo {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .produtos {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
-.producto {
+
+.produto {
     width: 150px;
     height: 200px;
     background-color: #ddd;
     border-radius: 10px;
 }
+
 @media (max-width: 600px) {
     .products {
         flex-direction: column;
