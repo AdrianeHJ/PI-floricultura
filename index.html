@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
     <link rel="stylesheet" href="styleindex.css">
 </head>
+
 <body>
     <div class="header">
         <div class="logo">
@@ -14,15 +16,25 @@
                 Jardim Encantado
             </a>
         </div>
-        <div class="nav">
-            <a href="#">Buquês</a>
-            <a href="#">Conjuntos</a>
-            <a href="#">Mudas</a>
-            <a href="#">Personalizados</a>
-            <a href="carrinho/carrinho.html" style="position: absolute; right: 0;">
-                <img alt="Carrinho" height="45" width="45" src="fotos/carrinho.jpg" />
-              </a>
-        </div>
+        <ul class="nav-lista">
+            <li class="nav">
+                <a href="#">Buquês</a>
+            </li>
+            <li class="nav">
+                <a href="#">Conjuntos</a>
+            </li>
+            <li class="nav">
+                <a href="#">Mudas</a>
+            </li>
+            <li class="nav">
+                <a href="#">Personalizados</a>
+            </li>
+            <li class="imagem">
+                <a href="carrinho/carrinho.html">
+                    <img alt="Carrinho" height="45" width="45" src="fotos/carrinho.jpg" class="imagem" />
+                </a>
+            </li>
+        </ul>
     </div>
     <div class="pesquisa">
         <input type="text" placeholder="O que você deseja?">
@@ -46,4 +58,5 @@
         </div>
     </div>
 </body>
+
 </html>
