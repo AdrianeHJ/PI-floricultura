@@ -109,6 +109,40 @@ body {
     border-radius: 10px;
 }
 
+/* Estilo para o container do carrossel */
+.carrossel-container {
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+}
+
+/* Estilo para a imagem do carrossel */
+.carrossel-imagem {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo para a faixa de texto abaixo da imagem */
+.carrossel-texto {
+    width: 1440px;
+    height: 59px;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para o parágrafo dentro da faixa de texto */
+.carrossel-texto p {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+}
+
 @media (max-width: 600px) {
     .products {
         flex-direction: column;
