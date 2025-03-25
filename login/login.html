@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.js">
+    <title>Faça seu login</title>
+
+    <script>
+        function logar() {
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if (login == "admin" && senha == "admin") {
+                location.href = "../admin/admin.html";
+            } else {
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <div class="titulo">
+            <h1>Faça o seu login</h1>
+            <div class="barra-horizontal"></div>
+        </div>
+        <div>
+            <label for="email" class="campo-input">Seu e-mail*</label>
+            <input type="text" placeholder="Login" id="login">
+        </div>
+        <div>
+            <label for="password" class="campo-input">Sua senha*</label>
+            <input type="password" placeholder="Senha" id="senha">
+        </div>
+        <div class="lembrar-me">
+            <input type="checkbox" />
+            <p>Lembrar-me</p>
+        </div>
+        <button>
+            <!--Entrar-->
+            <input type="submit" onclick="logar(); return false" class="botao">
+        </button>
+        <p>
+            Esqueceu sua senha?
+            <a href="#">Clique aqui!</a>
+        </p>
+        <p>
+            Voltar para o início
+            <a href="../index.html">Clique aqui!</a>
+        </p>
+    </form>
+
+
+</body>
+
+</html>
