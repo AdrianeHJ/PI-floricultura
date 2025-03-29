@@ -131,7 +131,7 @@ body {
 /* Estilo para o container do carrossel */
 .carrossel-container {
     width: 100%; 
-    max-width: 1440px; 
+    max-width: 100%; 
     height: auto; 
     margin: 0 auto;
     overflow: hidden; 
@@ -148,7 +148,7 @@ body {
 /* Estilo para a faixa de texto abaixo da imagem */
 .carrossel-texto {
     width: 100%;
-    max-width: 1440px;
+    max-width: 100%;
     height: 59px;
     background-color: #D9D9D9;
     margin: 0 auto;
