@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="prod.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../fotos/logojardimencantado.jpg" alt="Logo">
+                Jardim Encantado
+            </a>
+        </div>
+            
+        <ul class="nav-lista">
+            <li class="imagemlogin">
+                <a href="../login/login.html">
+                    <img alt="Login" height="40" width="40" src="../fotos/Login.png" />
+                </a>
+            </li>
+            <li class="nav">
+                <a href="../buques/buques.html">Buquês</a>
+                <ul class="dropdown">
+                    <li><a href="#">Buquê 1</a></li>
+                    <li><a href="#">Buquê 2</a></li>
+                    <li><a href="#">Buquê 3</a></li>
+                </ul>
+            </li>
+            <li class="nav">
+                <a href="#">Conjuntos</a>
+                <ul class="dropdown">
+                    <li><a href="#">Conjunto 1</a></li>
+                    <li><a href="#">Conjunto 2</a></li>
+                    <li><a href="#">Conjunto 3</a></li>
+                </ul>
+            </li>
+            <li class="nav">
+                <a href="#">Mudas</a>
+                <ul class="dropdown">
+                    <li><a href="#">Muda 1</a></li>
+                    <li><a href="#">Muda 2</a></li>
+                    <li><a href="#">Muda 3</a></li>
+                </ul>
+            </li>
+            <li class="nav">
+                <a href="#">Personalizados</a>
+                <ul class="dropdown">
+                    <li><a href="#">Pers. 1</a></li>
+                    <li><a href="#">Pers. 2</a></li>
+                    <li><a href="#">Pers. 3</a></li>
+                </ul>
+            </li>
+            <li class="imagem">
+                <a href="../carrinho/carrinho.html">
+                    <img alt="Carrinho" height="40" width="40" src="../fotos/carrinho.png" />
+                </a>
+            </li>
+        </ul>
+ 
+    </div>
+
+        
+    <main class="produto-container">
+
+        <!-- Imagem do Produto -->
+        <div class="produto-imagem">
+            <img src="../fotos/tulipa.jpg" alt="Mini Rosa Encantada">
+        </div>
+
+
+
+        <!-- Informações do Produto -->
+        <div class="produto-info">
+            <h1>BUQUÊ DE TULIPAS BRANCAS</h1>
+            <p class="preco">R$ 299,90 <span class="parcelamento">3x de R$ 99,97 sem juros</span></p>
+
+            <hr class= "quebra">
+
+            <h2 class="desc">DESCRIÇÃO:</h2>
+            <p class="descricao">
+                Que tal surpreender quem você ama e presentear com esse lindo buquê de tulipas brancas?
+            </p>
+
+            <!-- Botão Adicionar ao Carrinho -->
+            <button class="btn-carrinho" onclick="window.location.href='../carrinho/carrinho.html'">ADICIONAR AO CARRINHO →
+            </button>
+
+        </div>
+    </main>
+
+
+
+</body>
