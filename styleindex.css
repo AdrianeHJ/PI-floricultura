@@ -47,6 +47,7 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 0px;
+    position: relative;
 }
 
 .nav a {
@@ -60,16 +61,6 @@ body {
 .nav a:hover {
     background-color: orange;
     color: white;
-}
-
-.imagem {
-    position: absolute;
-    right: 0;
-}
-
-.imagemlogin {
-    position: absolute;
-    left: 0; 
 }
 
 .pesquisa {
@@ -155,7 +146,7 @@ body {
 }
 
 @media (max-width: 600px) {
-    .products {
+    body {
         flex-direction: column;
         align-items: center;
     }
@@ -166,11 +157,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
-.nav {
-    position: relative;
-}
-
 
 .dropdown {
     display: none;
@@ -208,9 +194,13 @@ body {
 .imagem {
     list-style: none;
     margin-right: 20px;
+    position: absolute;
+    right: 0;
 }
 
 .imagemlogin{
     list-style: none;
     margin-left: 20px;
+    position: absolute;
+    left: 0; 
 }

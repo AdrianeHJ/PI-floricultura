@@ -39,7 +39,14 @@
         justify-content: center;
         gap: 20px;
         flex-wrap: wrap;
-        margin-top: 10px;
+        margin-top: 0px;
+        position: relative;
+    }
+
+    .nav-lista {
+        display: flex;
+        justify-content: center;
+        gap: 2.9rem;
     }
 
     .nav a {
@@ -56,23 +63,65 @@
     }
 
     .container {
-        width: 50%;
-        max-width: 400px;
-        height: 200px;
         background-color: white;
+        margin: 20px;
+        padding: 20px;
         border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        font-weight: bold;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
     
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #eee;
+        list-style: none;
+        padding: 5px;
+        width: 150px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .dropdown li {
+        padding: 5px;
+    }
+    
+    .dropdown li a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        background: none;
+        padding: 10px;
+    }
+    
+    .dropdown li a:hover {
+        background-color: #ccc;
+    }
+    
+    .nav:hover .dropdown {
+        display: block;
+    }
+
+    .imagem {
+        list-style: none;
+        margin-right: 20px;
+        position: absolute;
+        right: 0;
+    }
+    
+    .imagemlogin{
+        list-style: none;
+        margin-left: 20px;
+        position: absolute;
+        left: 0; 
+    }
+
     h1 {
         text-align: center;
     }
