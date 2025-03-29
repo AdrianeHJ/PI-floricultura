@@ -98,13 +98,34 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    justify-content:space-evenly;
 }
 
 .produto {
-    width: 150px;
-    height: 200px;
+    display: flex; 
+    width: 400px; /*largura real da div*/
+    height: 250px; /*altura real da div*/
+    max-width: 200px; /*tamanho antes apenas para visualização*/
+    overflow: hidden; /*Esconde o texto fora da largura máxima de 200px*/
     background-color: #ddd;
     border-radius: 10px;
+    transition: 0.6s;
+    justify-content: space-between; 
+    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.425);
+
+}
+
+.produto:hover {
+    max-width: 400px; /*passando o mouse, a div volta para o tamamho normal e o overflow desaparece*/
+    transition: 0.4s linear;
+    padding-right: 3rem; /*ajuste do coneúdo da div*/
+    
+} 
+
+.informação{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
 }
 
 /* Estilo para o container do carrossel */
