@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador</title>
+    <link rel="icon" type="image/png" href="../fotos/LogoSemFundo.png">
     <link rel="stylesheet" href="admin.css">
 
     <script>
@@ -40,6 +41,7 @@
                     <th>Tipo</th>
                     <th>Quantidade</th>
                     <th>Preço Unitário</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -49,6 +51,10 @@
                     <td>Rosas</td>
                     <td>30</td>
                     <td>R$ 20,00</td>
+                    <td>
+                        <button class="editar">Editar</button>
+                        <button class="excluir">Excluir</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>02</td>
@@ -56,12 +62,19 @@
                     <td>Girassol</td>
                     <td>18</td>
                     <td>R$ 25,00</td>
+                    <td>
+                        <button class="editar">Editar</button>
+                        <button class="excluir">Excluir</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
 
-        <button class="adicionar">Adicionar</button>
+        <button id="adicionar" class="adicionar">Adicionar Item</button>
+
     </div>
+
+    <script src="admin.js"></script>
 </body>
 
 </html>
