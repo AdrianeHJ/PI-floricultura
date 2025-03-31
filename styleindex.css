@@ -35,39 +35,100 @@ body {
     margin-bottom: 10px;
 }
 
+/* Estilização do menu de navegação */
 .nav-lista {
     display: flex;
     justify-content: center;
     gap: 2.9rem;
+    padding: 0;
+    list-style: none;
 }
 
 .nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 0px;
     position: relative;
 }
 
+/* Estilização dos botões */
 .nav a {
     text-decoration: none;
     color: black;
     font-size: 16px;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+/* Traço acima do botão */
+.nav a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; 
+    background-color: rgb(252, 181, 216); 
+    transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse */
 .nav a:hover {
-    background-color: orange;
+    background-color: rgb(40, 156, 24);
     color: white;
 }
 
+/* Estilização do dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eee;
+    list-style: none;
+    padding: 10px 0;
+    width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000; 
+}
+
+/* Exibir o dropdown ao passar o mouse sobre o item correto */
+.nav li {
+    position: relative;
+}
+
+.nav li:hover .dropdown {
+    display: block;
+}
+
+/* Estilização dos itens do dropdown */
+.dropdown li {
+    padding: 8px 15px;
+}
+
+.dropdown li a {
+    color: black;
+    font-size: 14px;
+    display: block;
+    padding: 8px 10px;
+    transition: background-color 0.3s;
+}
+
+.dropdown li a:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+/* Barra de pesquisa centralizada */
 .pesquisa {
     display: flex;
     justify-content: center;
     margin: 20px;
 }
+
+
 
 .pesquisa input {
     width: 100%;
@@ -131,18 +192,21 @@ body {
 /* Estilo para o container do carrossel */
 .carrossel-container {
     width: 100%; 
-    max-width: 100%; 
-    height: auto; 
-    margin: 0 auto;
-    overflow: hidden; 
+    overflow: hidden;
+    position: relative;  
+}
+
+.carrossel {
+    display: flex; /* Imagens uma do lado da outra */
+    transition: transform 0.5s ease-in-out;
+    width: calc(100vw * 2);
 }
 
 /* Estilo para a imagem do carrossel */
 .carrossel-imagem {
-    width: 100%;
-    height: auto; 
-    display: block;
-    object-fit: cover;
+    width: 100vw;
+    height: auto;
+    flex-shrink: 0;
 }
 
 /* Estilo para a faixa de texto abaixo da imagem */
@@ -158,12 +222,36 @@ body {
     text-align: center; 
 }
 
-/* Estilo para o parágrafo dentro da faixa de texto */
-.carrossel-texto p {
-    margin: 0;
-    font-size: 18px;
-    color: #000;
-    
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.letreiro {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background-color: #3b643b;
+    padding: 12px;
+    border-radius: 8px;
+    animation: piscar 2s infinite;
+}
+
+.letreiro span {
+    color: #f8c1c1;
+    font-weight: 900;
+}
+
+
+@keyframes slide {
+    0%, 50% {
+        transform: translateX(0);
+    }
+    50.01%, 100% {
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 600px) {
