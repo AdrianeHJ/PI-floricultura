@@ -84,3 +84,6 @@ a {
 .botao {
     background-color: rgb(61, 206, 73);
 }
+* {
+    font-family: 'Arial', sans-serif;
+}

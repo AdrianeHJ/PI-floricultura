@@ -14,10 +14,11 @@
             var login = document.getElementById('login').value;
             var senha = document.getElementById('senha').value;
 
-            if (login == "admin" && senha == "admin") {
+            if (login == "admin@123" && senha == "admin@123") {
                 location.href = "../admin/admin.html";
             } else {
-                alert('Usuario ou senha incorretos');
+                location.href = "http://127.0.0.1:5500/index.html"; //teste de acesso para apresentação
+               // alert('Usuario ou senha incorretos');
             }
 
         }

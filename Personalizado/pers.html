@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalize seu Presente</title>
+    <link rel="stylesheet" href="pers.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../fotos/logojardimencantado.jpg" alt="Logo">
+                Jardim Encantado
+            </a>
+        </div>
+            
+        <ul class="nav-lista">
+            <li class="imagemlogin">
+                <a href="../login/login.html">
+                    <img alt="Login" height="40" width="40" src="../fotos/Login.png" />
+                </a>
+            </li>
+            <li class="nav">
+                <a href="../buques/buques.html">Buquês</a>
+                <ul class="dropdown">
+                    <li><a href="#">Rosas</a></li>
+                    <li><a href="#">Brancas</a></li>
+                    <li><a href="#">Amarelas</a></li>
+                    <li><a href="#">laranjas</a></li>
+                    <li><a href="#">lilás</a></li>
+                    <li><a href="#">roxas</a></li>
+                </ul>
+            </li>
+            <li class="nav">
+                <a href="#">Conjuntos</a>
+                <ul class="dropdown">
+                    <li><a href="#">Rosa+branco</a></li>
+                    <li><a href="#">amarelo+branco</a></li>
+                    <li><a href="#">laranja+branco</a></li>
+                    <li><a href="#">lilás+branco</a></li>
+                    <li><a href="#">roxo+branco</a></li>
+                </ul>
+            </li>
+            <li class="nav">
+                <a href="#">Mudas para jardim</a>
+                <ul class="dropdown">
+                    <li><a href="#">Gérbera</a></li>
+                    <li><a href="#">Irís</a></li>
+                    <li><a href="#">Mini margarida</a></li>
+                    <li><a href="#">boca de leão</a></li>
+                    <li><a href="#">Crisantemo</a></li>
+                    <li><a href="#">Hortensia</a></li>
+                    <li><a href="#">Tulipa</a></li>
+                    <li><a href="#">Girassol</a></li>
+                </ul>
+            </li>
+            <li class="nav">
+                <a href="../Personalizado/pers.html">Personalizado</a>
+            </li>
+            <li class="imagem">
+                <a href="../carrinho/carrinho.html">
+                    <img alt="Carrinho" height="40" width="40" src="../fotos/carrinho.png" />
+                </a>
+            </li>
+        </ul>
+ 
+    </div>
+    <div class="container">
+        <header>
+            <h1>Bem-vindo!</h1>
+            <h2> Vamos te ajudar a montar o buquê certo para essa ocasião especial</h2>
+            <p>Escolha as flores, cores e o tamanho do seu buquê, além de opções de presentes como caixas, ursos e chocolates!</p>
+        </header>
+
+        <section class="personalizacao">
+            <div class="buque" id="buque-1">
+                <h3 class="titulo-buque">Buquê 1</h3>
+                <button class="btn-remover" onclick="removerBuque(this)">Remover Buquê</button>
+                <!-- Seção de seleção de flores -->
+                <div class="selecao-flores">
+                    <h2>Escolha as flores</h2>
+                    <label><input type="checkbox" name="flores" value="Rosa"> Rosa</label><br>
+                    <label><input type="checkbox" name="flores" value="Tulipa"> Tulipa</label><br>
+                    <label><input type="checkbox" name="flores" value="Orquídeas"> Orquídeas</label><br>
+                    <label><input type="checkbox" name="flores" value="Girassol"> Girassol</label><br>
+                    <label><input type="checkbox" name="flores" value="Jasmim"> Jasmim</label><br>
+                </div>
+
+                <!-- Seção de seleção de cores -->
+                <div class="selecao-cores">
+                    <h2>Escolha as cores das flores</h2>
+                    <label><input type="checkbox" name="cores" value="Rosa"> Rosa</label><br>
+                    <label><input type="checkbox" name="cores" value="Branca"> Branca</label><br>
+                    <label><input type="checkbox" name="cores" value="Amarelo"> Amarelo</label><br>
+                    <label><input type="checkbox" name="cores" value="Laranja"> Laranja</label><br>
+                    <label><input type="checkbox" name="cores" value="Lilás"> Lilás</label><br>
+                    <label><input type="checkbox" name="cores" value="Roxa"> Roxa</label><br>
+                </div>
+
+                <!-- Seção de seleção de tamanho -->
+                <div class="selecao-tamanho">
+                    <h2>Escolha o tamanho do Buquê</h2>
+                    <label><input type="radio" name="tamanho-1" value="Pequeno"> Pequeno</label><br>
+                    <label><input type="radio" name="tamanho-1" value="Médio"> Médio</label><br>
+                    <label><input type="radio" name="tamanho-1" value="Grande"> Grande</label><br>
+                </div>
+
+                <!-- Seção de seleção de presentes -->
+                <div class="selecao-presentes">
+                    <h2>Escolha um presente para acompanhar o buquê</h2>
+                    <label><input type="checkbox" name="presentes-1" value="Caixa"> Caixa para buquê</label><br>
+                    <label><input type="checkbox" name="presentes-1" value="Urso"> Urso de pelúcia</label><br>
+                    <label><input type="checkbox" name="presentes-1" value="Chocolate"> Chocolate</label><br>
+                </div>
+            </div>
+
+            <!-- Adicionar mais buquês -->
+            <div class="adicionar-buque">
+                <button onclick="adicionarBuque()">Adicionar outro buquê</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="actions">
+                <button class="btn-carrinho" onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="pers.js"></script>
+</body>
+</html>
