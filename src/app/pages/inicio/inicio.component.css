@@ -1,0 +1,315 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8c1c1;
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logo img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Estilização do menu de navegação */
+.nav-lista {
+    display: flex;
+    justify-content: center;
+    gap: 2.9rem;
+    padding: 0;
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+/* Estilização dos botões */
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Traço acima do botão */
+.nav a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; 
+    background-color: rgb(252, 181, 216); 
+    transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.nav a:hover {
+    background-color: rgb(40, 156, 24);
+    color: white;
+}
+
+/* Estilização do dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eee;
+    list-style: none;
+    padding: 10px 0;
+    width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000; 
+}
+
+/* Exibir o dropdown ao passar o mouse sobre o item correto */
+.nav li {
+    position: relative;
+}
+
+.nav li:hover .dropdown {
+    display: block;
+}
+
+/* Estilização dos itens do dropdown */
+.dropdown li {
+    padding: 8px 15px;
+}
+
+.dropdown li a {
+    color: black;
+    font-size: 14px;
+    display: block;
+    padding: 8px 10px;
+    transition: background-color 0.3s;
+}
+
+.dropdown li a:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+/* Barra de pesquisa centralizada */
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+.pesquisa input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 13px;
+}
+
+.container {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.produtos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content:space-evenly;
+}
+
+.produto {
+    display: flex; 
+    width: 400px; /*largura real da div*/
+    height: 250px; /*altura real da div*/
+    max-width: 200px; /*tamanho antes apenas para visualização*/
+    overflow: hidden; /*Esconde o texto fora da largura máxima de 200px*/
+    background-color: #ddd;
+    border-radius: 10px;
+    transition: 0.6s;
+    justify-content: space-between; 
+    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.425);
+
+}
+
+.produto:hover {
+    max-width: 400px; /*passando o mouse, a div volta para o tamamho normal e o overflow desaparece*/
+    transition: 0.4s linear;
+    padding-right: 3rem; /*ajuste do coneúdo da div*/
+    
+} 
+
+.informação{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+/* Estilo para o container do carrossel */
+.carrossel-container {
+    width: 100%; 
+    overflow: hidden;
+    position: relative;  
+}
+
+.carrossel {
+    display: flex; /* Imagens uma do lado da outra */
+    transition: transform 0.5s ease-in-out;
+    width: calc(100vw * 2);
+}
+
+/* Estilo para a imagem do carrossel */
+.carrossel-imagem {
+    width: 100vw;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Estilo para a faixa de texto abaixo da imagem */
+.carrossel-texto {
+    width: 100%;
+    max-width: 100%;
+    height: 59px;
+    background-color: #D9D9D9;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.letreiro {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background-color: #3b643b;
+    padding: 12px;
+    border-radius: 8px;
+    animation: piscar 2s infinite;
+}
+
+.letreiro span {
+    color: #f8c1c1;
+    font-weight: 900;
+}
+
+
+@keyframes slide {
+    0%, 50% {
+        transform: translateX(0);
+    }
+    50.01%, 100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eee;
+    list-style: none;
+    padding: 5px;
+    width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.dropdown li {
+    padding: 5px;
+}
+
+.dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background: none;
+    padding: 10px;
+}
+
+.dropdown li a:hover {
+    background-color: #ccc;
+}
+
+.nav:hover .dropdown {
+    display: block;
+}
+
+.imagem {
+    list-style: none;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.imagemlogin{
+    list-style: none;
+    margin-left: 20px;
+    position: absolute;
+    left: 0; 
+}
