@@ -1,1 +1,48 @@
-<p>login works!</p>
+<div class="tela-login">
+  <form (ngSubmit)="logar()">
+    <div class="titulo">
+      <h1>Faça o seu login</h1>
+      <div class="barra-horizontal"></div>
+    </div>
+
+    <div class="campo-input">
+      <label for="login">Seu e-mail*</label>
+      <input
+        type="text"
+        id="login"
+        placeholder="Login"
+        name="login"
+        [(ngModel)]="login"
+        required
+      />
+    </div>
+
+    <div class="campo-input">
+      <label for="senha">Sua senha*</label>
+      <input
+        type="password"
+        id="senha"
+        placeholder="Senha"
+        name="senha"
+        [(ngModel)]="senha"
+        required
+      />
+    </div>
+
+    <div class="lembrar-me">
+      <input type="checkbox" />
+      <p>Lembrar-me</p>
+    </div>
+
+    <button type="submit" class="botao">Entrar</button>
+
+    <p>
+      Esqueceu sua senha?
+      <a href="#">Clique aqui!</a>
+    </p>
+    <p>
+      Voltar para o início
+      <a routerLink="/">Clique aqui!</a>
+    </p>
+  </form>
+</div>

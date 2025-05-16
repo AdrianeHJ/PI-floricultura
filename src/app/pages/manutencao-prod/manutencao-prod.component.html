@@ -1,0 +1,62 @@
+<body>
+<div class="header">
+  <ul class="lista">
+    <li class="logo">
+      <a routerLink="/produto">
+        <img src="assets/logojardimencantado.jpg" alt="Logo" />
+        Jardim Encantado
+      </a>
+    </li>
+    <li class="login">
+      <a routerLink="/login">
+        <img src="assets/sign_out.png" height="35" width="35" alt="Sign Out" />
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="container">
+  <table>
+    <caption class="borda">
+      <h3>ESTOQUE DE FLORES</h3>
+    </caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th>Quantidade</th>
+        <th>Preço Unitário</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Conteúdo fixo como exemplo. Depois pode ser substituído por *ngFor -->
+      <tr>
+        <td>01</td>
+        <td>Rosas Azuis</td>
+        <td>Rosas</td>
+        <td>30</td>
+        <td>R$ 20,00</td>
+        <td>
+          <button class="editar">Editar</button>
+          <button class="excluir">Excluir</button>
+        </td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td>Girassóis</td>
+        <td>Girassol</td>
+        <td>18</td>
+        <td>R$ 25,00</td>
+        <td>
+          <button class="editar">Editar</button>
+          <button class="excluir">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button id="adicionar" class="adicionar">Adicionar Item</button>
+</div>
+</body>

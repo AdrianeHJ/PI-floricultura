@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { InicioComponent } from './pages/inicio/inicio.component';
+import { FormsModule } from '@angular/forms';
+import { RouterOutlet   } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [InicioComponent],
+  imports: [RouterOutlet,FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
