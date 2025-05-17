@@ -1,11 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { produto } from '../../services/types';
+import { ProdutoService } from '../../services/produto.service';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-manutencao-prod',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './manutencao-prod.component.html',
   styleUrl: './manutencao-prod.component.css'
 })
-export class ManutencaoProdComponent {
+export class ManutencaoProdComponent implements OnInit{
+    listaprodutos:produto[] = [];
 
+  constructor(private service:ProdutoService,
+              private router: Router
+  ){}
+
+
+  ngOnInit(): void {
+    this.service.listar().subscribe((produto)=>{
+        this.listaprodutos = produto;
+    })
+  }
+
+  excluir(id: number){
+    
+  }
 }
+

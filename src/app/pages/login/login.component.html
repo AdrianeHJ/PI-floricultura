@@ -1,5 +1,5 @@
 <div class="tela-login">
-  <form (ngSubmit)="logar()">
+  <form>
     <div class="titulo">
       <h1>Faça o seu login</h1>
       <div class="barra-horizontal"></div>
@@ -34,8 +34,14 @@
       <p>Lembrar-me</p>
     </div>
 
-    <button type="submit" class="botao">Entrar</button>
-
+    <button
+      type="submit"
+      class="botao"
+      (disabled)="(botaoDesabilitado)"
+      (click)="onBotaoClicado()"
+    >
+      Entrar
+    </button>
     <p>
       Esqueceu sua senha?
       <a href="#">Clique aqui!</a>

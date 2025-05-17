@@ -4,26 +4,29 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
-  imports: [FormsModule],
+  standalone: true,            // necessário para usar `imports`
+  imports: [FormsModule],       // permite [(ngModel)] no template
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-
-
 export class LoginComponent {
-
   login: string = '';
   senha: string = '';
+  botaoDesabilitado: boolean = true;
 
   constructor(private router: Router) { }
 
-  logar() {
-    if (this.login === 'admin@123' && this.senha === 'admin@123') {
-      this.router.navigate(['/produtos']);
+  onBotaoClicado() {
+    if (this.login.trim() && this.senha.trim()) {
+      if (this.login === 'admin@123' && this.senha === 'admin@123') {
+        alert(`Bem-vindo ${this.login}!`);  // uso correto de template literal
+        this.router.navigate(['/produtos']);
+      } else {
+        alert('Dados inválidos');
+        this.router.navigate(['/']);
+      }
     } else {
-      this.router.navigate(['/']);
-      // ou exiba mensagem:
-      // alert('Usuário ou senha incorretos');
+      alert('Preencha ambos os campos!');
     }
   }
 }

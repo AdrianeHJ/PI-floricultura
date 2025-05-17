@@ -31,30 +31,23 @@
       </tr>
     </thead>
     <tbody>
-      <!-- Conteúdo fixo como exemplo. Depois pode ser substituído por *ngFor -->
-      <tr>
-        <td>01</td>
-        <td>Rosas Azuis</td>
-        <td>Rosas</td>
-        <td>30</td>
-        <td>R$ 20,00</td>
-        <td>
-          <button class="editar">Editar</button>
-          <button class="excluir">Excluir</button>
-        </td>
-      </tr>
-      <tr>
-        <td>02</td>
-        <td>Girassóis</td>
-        <td>Girassol</td>
-        <td>18</td>
-        <td>R$ 25,00</td>
-        <td>
-          <button class="editar">Editar</button>
-          <button class="excluir">Excluir</button>
-        </td>
-      </tr>
-    </tbody>
+      <tbody>
+            @for (produto of listaprodutos; track produto){
+                <tr>
+                    <td>{{produto.id}}</td>
+                    <td>{{produto.nome}}</td>
+                    <td>{{produto.tipo}}</td>
+                    <td>{{produto.quantidade}}</td>
+                    <td>{{produto.precounit}}</td>
+                    <td>
+                        <button class="editar" [routerLink]="['alterar', produto.id]">editar</button>
+
+                        <button class="excluir" (click)="excluir(produto.id!)">excluir</button>
+                        
+                    </td>
+                </tr>
+            }
+        </tbody>
   </table>
 
   <button id="adicionar" class="adicionar">Adicionar Item</button>
