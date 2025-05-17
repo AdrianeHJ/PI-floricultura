@@ -1,82 +1,109 @@
-.content-container {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 128px;
-    text-align: left;
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.content-container h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.content-container p {
-    font-size: 1.2rem;
-    color: #555;
+ body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left,#e05e5e, #dbb0b0);
 }
 
 form {
-    width: 100%;
-    padding: 10px;
-    margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Se quiser manter uma borda */
+  border-radius: 8px;
+  background-color: transparent; /* Essa linha é importante */
+}
+
+.create-product-container {
+    max-width: 600px;
+    height: 100%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px black;
+  }
+  
+  h2 {
+    color: #2c5282;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-form {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-.input-simples,
-.input-submeter {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 8px 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  label {
+    font-weight: 500;
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 0.5rem;
+    border: 1px solid #000000;
     border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-.input-id {
-    width: 10%;
-    box-sizing: border-box;
-    padding: 8px 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-.input-submeter {
-    padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 0 auto;
-}
-
-.mensagem {
-    margin: 16px auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    font-size: 16px;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.form-principal {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
+    font-weight: 500;
+  }
+  
+  .cadastrar-btn {
+    background: #ffffff;
+    color: #4a5568;
+  }
+  
+  .cadastrar-btn:hover {
+    background: #cbd5e0;
+  }
+  
+  .cancel-btn {
+    background: #ffffff;
+    color: #4a5568;
+  }
+  
+  .cancel-btn:hover {
+    background: #cbd5e0;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.875rem;
+  }
+  
+  .error {
+    border-color: red;
+  }
+  

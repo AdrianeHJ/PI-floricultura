@@ -11,6 +11,13 @@ export const routes: Routes = [
         component: InicioComponent,
         title: 'Jardim Encantado'
     },
+
+    { 
+        path: 'inicio', 
+        component: InicioComponent, 
+        title: 'Jardim Encantado'
+    },
+      
     {
         path: 'login',
         component: LoginComponent,

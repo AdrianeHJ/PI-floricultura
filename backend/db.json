@@ -2,10 +2,17 @@
   "produto": [
     {
       "id": "1",
-      "nome": "Teste",
-      "quantidade": "200",
-      "precounit": "15,90",
-      "tipo": "Tulipas"
+      "nome": "Rosas",
+      "quantidade": 10,
+      "precounit": 12,
+      "tipo": "Rosa"
+    },
+    {
+      "id": "2",
+      "nome": "Hugop",
+      "tipo": "Fodão",
+      "quantidade": 1,
+      "precounit": 1000000000
     }
   ]
 }

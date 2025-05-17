@@ -141,17 +141,19 @@ body {
 }
 
 .container {
-    background-color: white;
-    margin: 20px;
+    background-color: #f8c1c1;
+    margin: 0;
     padding: 20px;
-    border-radius: 10px;
+    
 }
 
 .titulo {
+    border-bottom: rgb(255, 255, 255)  solid;
+    margin-bottom: 40px;
+    max-width: 100%;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
 .produtos {
@@ -184,6 +186,7 @@ body {
 } 
 
 .informação{
+    text-align: center;
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
@@ -234,9 +237,8 @@ body {
     font-weight: bold;
     color: white;
     background-color: #3b643b;
-    padding: 12px;
-    border-radius: 8px;
-    animation: piscar 2s infinite;
+    padding: 5px;
+    animation: piscar 2.4s infinite;
 }
 
 .letreiro span {
@@ -261,11 +263,6 @@ body {
     }
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .dropdown {
     display: none;
@@ -313,3 +310,4 @@ body {
     position: absolute;
     left: 0; 
 }
+

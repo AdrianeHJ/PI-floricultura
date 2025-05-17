@@ -18,7 +18,7 @@ export class LoginComponent {
 
   onBotaoClicado() {
     if (this.login.trim() && this.senha.trim()) {
-      if (this.login === 'admin@123' && this.senha === 'admin@123') {
+      if (this.login === 'admin' && this.senha === 'admin') {
         alert(`Bem-vindo ${this.login}!`);  // uso correto de template literal
         this.router.navigate(['/produtos']);
       } else {

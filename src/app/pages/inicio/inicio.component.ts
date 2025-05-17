@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { FooterComponent } from '../../shared/footer/footer.component';
 
 @Component({
   selector: 'app-inicio',
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: 'inicio.component.html',
   styleUrl: 'inicio.component.css'
 })

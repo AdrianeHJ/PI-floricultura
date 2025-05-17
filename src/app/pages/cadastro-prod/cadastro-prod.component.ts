@@ -50,4 +50,9 @@ export class CadastroProdComponent {
     }
   }
 
+   cancel() {
+    this.router.navigate(["/produtos"]);
+  }
 }
+
+
