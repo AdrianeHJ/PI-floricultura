@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { produto } from '../../services/types';
+import { Produto } from '../../services/types';
 import { ProdutoService } from '../../services/produto.service';
 import { Router, RouterLink } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './manutencao-prod.component.css'
 })
 export class ManutencaoProdComponent implements OnInit{
-    listaprodutos:produto[] = [];
+    listaprodutos:Produto[] = [];
 
   constructor(private service:ProdutoService,
               private router: Router
@@ -23,8 +23,12 @@ export class ManutencaoProdComponent implements OnInit{
     })
   }
 
-  excluir(id: number){
-    
+   excluir(id: number) {
+    if (id) {
+      this.service.excluir(id).subscribe(() => {
+        window.location.reload()
+      })
+    }
   }
 }
 

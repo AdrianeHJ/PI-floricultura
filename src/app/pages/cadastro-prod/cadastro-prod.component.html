@@ -1,0 +1,56 @@
+<div class="content-container">
+  <h1>{{ titulo }}</h1>
+  <form>
+    <label for="input-id">ID</label><br />
+    <input
+      class="input-id"
+      id="input-id"
+      name="input-id"
+      placeholder="Digite o id"
+      type="text"
+      [(ngModel)]="produto.id"
+    />
+
+    <label for="input-nome">Nome</label><br />
+    <input
+      class="input-simples"
+      id="input-nome"
+      name="input-nome"
+      placeholder="Digite o primeiro nome"
+      type="text"
+      [(ngModel)]="produto.nome"
+    />
+
+    <label for="input-sobrenome">Tipo</label><br />
+    <input
+      class="input-simples"
+      id="input-sobrenome"
+      name="input-sobrenome"
+      placeholder="Digite o sobrenome"
+      type="text"
+      [(ngModel)]="produto.tipo"
+    />
+
+    <label for="input-sobrenome">Quantidade</label><br />
+    <input
+      class="input-simples"
+      id="input-sobrenome"
+      name="input-sobrenome"
+      placeholder="Digite o sobrenome"
+      type="text"
+      [(ngModel)]="produto.quantidade"
+    />
+
+    <label for="input-sobrenome">Preço Unitário</label><br />
+    <input
+      class="input-simples"
+      id="input-sobrenome"
+      name="input-sobrenome"
+      placeholder="Digite o sobrenome"
+      type="text"
+      [(ngModel)]="produto.precounit"
+    />
+
+    <button class="input-submeter" (click)="submeter()">Cadastrar</button>
+  </form>
+</div>

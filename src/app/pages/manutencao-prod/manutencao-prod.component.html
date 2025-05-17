@@ -40,9 +40,9 @@
                     <td>{{produto.quantidade}}</td>
                     <td>{{produto.precounit}}</td>
                     <td>
-                        <button class="editar" [routerLink]="['alterar', produto.id]">editar</button>
+                        <button class="editar" [routerLink]="['alterar', produto.id]">Editar</button>
 
-                        <button class="excluir" (click)="excluir(produto.id!)">excluir</button>
+                        <button class="excluir" (click)="excluir(produto.id!)">Excluir</button>
                         
                     </td>
                 </tr>
@@ -50,6 +50,6 @@
         </tbody>
   </table>
 
-  <button id="adicionar" class="adicionar">Adicionar Item</button>
+  <button id="adicionar" class="adicionar" routerLink="/produtos/incluir">Adicionar Item</button>
 </div>
 </body>

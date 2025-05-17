@@ -1,11 +1,10 @@
 {
-     "produto": [
+  "produto": [
     {
       "id": "1",
-      "nome": "Rosa Verde",
-      "tipo": "Rosas",
-      "quantidade": 110,
-      "precounit": 10.0
+      "nome": "Teste",
+      "quantidade": "200",
+      "precounit": "15,90"
     }
   ]
 }
