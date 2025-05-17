@@ -8,7 +8,7 @@ import { produto } from './types';
 })
 export class ProdutoService {
 
-  private readonly API = 'http://localhost:3000/pessoas'
+  private readonly API = 'http://localhost:3000/produto';
 
   constructor(private http:HttpClient) { }
 
