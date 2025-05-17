@@ -4,7 +4,8 @@
       "id": "1",
       "nome": "Teste",
       "quantidade": "200",
-      "precounit": "15,90"
+      "precounit": "15,90",
+      "tipo": "Tulipas"
     }
   ]
 }

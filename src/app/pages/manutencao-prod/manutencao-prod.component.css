@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
 }
@@ -61,7 +61,7 @@ body {
 }
 
 .container {
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -85,7 +85,7 @@ table {
 }
 
 .adicionar {
-    background-color: lightgreen;
+    background-color: rgb(31, 172, 31);
     color: white;
     padding: 10px 20px;
     border: none;
