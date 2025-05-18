@@ -35,22 +35,27 @@ form {
 
 .lembrar-me {
     display: flex;
-    gap: 5px;
 }
 
 form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     padding: 50px;
+    padding-bottom: 70px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    height: 70%;
+    
 }
 
 .titulo {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 5px;
 }
 
 button {
