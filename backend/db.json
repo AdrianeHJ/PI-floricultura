@@ -2,10 +2,9 @@
   "produto": [
     {
       "id": "1",
-      "nome": "Rosas",
+      "nome": "Gabiras",
       "quantidade": 10,
-      "precounit": 12,
-      "tipo": "Rosa"
+      "precounit": 11
     },
     {
       "id": "2",
@@ -13,6 +12,13 @@
       "tipo": "Fodão",
       "quantidade": 1,
       "precounit": 1000000000
+    },
+    {
+      "id": "3",
+      "nome": "Gabiras",
+      "tipo": "rOSAS",
+      "quantidade": 10,
+      "precounit": 11
     }
   ]
 }
