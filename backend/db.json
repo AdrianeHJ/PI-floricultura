@@ -1,24 +1,3 @@
 {
-  "produto": [
-    {
-      "id": "1",
-      "nome": "Gabiras",
-      "quantidade": 10,
-      "precounit": 11
-    },
-    {
-      "id": "2",
-      "nome": "Hugop",
-      "tipo": "Fodão",
-      "quantidade": 1,
-      "precounit": 1000000000
-    },
-    {
-      "id": "3",
-      "nome": "Gabiras",
-      "tipo": "rOSAS",
-      "quantidade": 10,
-      "precounit": 11
-    }
-  ]
+  "produto": []
 }

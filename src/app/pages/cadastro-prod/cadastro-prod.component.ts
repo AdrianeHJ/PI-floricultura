@@ -61,7 +61,7 @@ export class CadastroProdComponent {
           this.router.navigate(['/produtos']);
         },
         error: (err) => {
-          alert("Erro ao criar produto: " + err);
+          //alert("Erro ao criar produto: " + err);
           this.router.navigate(['/produtos/alterar/3']);
         }
       });
