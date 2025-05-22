@@ -3,6 +3,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ManutencaoProdComponent } from './pages/manutencao-prod/manutencao-prod.component';
 import { CadastroProdComponent } from './pages/cadastro-prod/cadastro-prod.component';
+import { ProdutoComponent } from './pages/produto/produto.component';
 
 
 export const routes: Routes = [
@@ -37,5 +38,9 @@ export const routes: Routes = [
         path: 'produtos/alterar/:id',
         component: CadastroProdComponent,
         title: 'Alterar Produto'
+    },
+    { path: 'produto', 
+        component: ProdutoComponent,
+        title: 'produto'
     }
 ];
