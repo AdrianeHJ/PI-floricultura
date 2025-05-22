@@ -51,6 +51,10 @@ body {
     position: relative;
 }
 
+#botao-nav{
+    width: 160px;
+}
+
 /* Estilização dos botões */
 .nav a {
     text-decoration: none;
@@ -166,16 +170,16 @@ body {
 
 .produto {
     display: flex; 
-    width: 400px; /*largura real da div*/
+    width: 500px; /*largura real da div*/
     height: 250px; /*altura real da div*/
     max-width: 200px; /*tamanho antes apenas para visualização*/
     overflow: hidden; /*Esconde o texto fora da largura máxima de 200px*/
     background-color: #ddd;
     border-radius: 10px;
     transition: 0.6s;
-    justify-content: space-between; 
-    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.425);
-
+    /* justify-content: space-between;  */
+    box-shadow: 5px 5px 20px rgba(241, 145, 145, 0.425);
+    background-color: white;
 }
 
 .produto:hover {
@@ -186,10 +190,10 @@ body {
 } 
 
 .informação{
-    text-align: center;
     display: flex;
     flex-direction: column; 
-    justify-content: space-between;
+  margin-left: 60px;
+
 }
 
 /* Estilo para o container do carrossel */
@@ -266,7 +270,7 @@ body {
 
 .dropdown {
     display: none;
-    position: absolute;
+    /* position: absolute; */
     top: 100%;
     left: 0;
     background-color: #eee;
@@ -275,6 +279,7 @@ body {
     width: 150px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    width: 180px;
 }
 
 .dropdown li {
