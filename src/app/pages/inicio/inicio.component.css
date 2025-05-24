@@ -190,7 +190,7 @@ body {
 .produto:hover {
     max-width: 400px; /*passando o mouse, a div volta para o tamamho normal e o overflow desaparece*/
     transition: 0.4s linear;
-    padding-right: 3rem; /*ajuste do coneúdo da div*/
+    padding-right: 3rem; 
     
 } 
 
