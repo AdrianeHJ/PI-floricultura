@@ -152,13 +152,18 @@ body {
 }
 
 .titulo {
-    border-bottom: rgb(255, 255, 255)  solid;
-    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 35px;
     max-width: 100%;
     text-align: center;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 26px;
+    font-family: 'Georgia', serif; /* Fonte serifada para um toque clássico */
+    font-weight: normal;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding-bottom: 6px;
 }
+
 
 .produtos {
     display: flex;
@@ -169,18 +174,18 @@ body {
 }
 
 .produto {
-    display: flex; 
+    display: flex;
     width: 500px; /*largura real da div*/
     height: 250px; /*altura real da div*/
     max-width: 200px; /*tamanho antes apenas para visualização*/
     overflow: hidden; /*Esconde o texto fora da largura máxima de 200px*/
-    background-color: #ddd;
+    background-color: #fd8bc8; /* Cor de fundo atual */
     border-radius: 10px;
     transition: 0.6s;
-    /* justify-content: space-between;  */
-    box-shadow: 5px 5px 20px rgba(241, 145, 145, 0.425);
-    background-color: white;
+    box-shadow: 5px 5px 20px rgba(253, 26, 166, 0.425);
+    background-color: #ffffff;
 }
+
 
 .produto:hover {
     max-width: 400px; /*passando o mouse, a div volta para o tamamho normal e o overflow desaparece*/
@@ -189,12 +194,45 @@ body {
     
 } 
 
-.informação{
-    display: flex;
-    flex-direction: column; 
-  margin-left: 60px;
 
+.parcelamento {
+    font-size: 0.8em;
+    color: #28a745;
+    margin-top: 5px;
+    font-weight: bold;
 }
+
+
+.informação {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center; 
+    height: 100%; 
+}
+
+.informação h2 {
+    font-size: 1.2em; 
+    margin-top: 5px;
+    margin-bottom: 2px;
+    color: #333; 
+}
+
+.informação h4 {
+    font-size: 0.9em;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    color: #777; 
+    font-weight: normal; 
+}
+
+.informação h2:last-child { /* Estiliza o último h2 (o preçoo) */
+    font-size: 1.4em;
+    color: #198a42; 
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 
 /* Estilo para o container do carrossel */
 .carrossel-container {
