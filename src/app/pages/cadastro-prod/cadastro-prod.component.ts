@@ -34,6 +34,7 @@ export class CadastroProdComponent {
         if (produto) {
           this.produto.id = produto.id;
           this.produto.nome = produto.nome;
+          this.produto.tipo = produto.tipo;
           this.produto.quantidade = produto.quantidade;
           this.produto.precounit = produto.precounit;
         }

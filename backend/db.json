@@ -3,9 +3,9 @@
     {
       "id": "1",
       "nome": "Rosa amarela",
-      "tipo": "rosas",
       "quantidade": 20,
-      "precounit": 11.6
+      "precounit": 11.6,
+      "tipo": "Rosas"
     }
   ]
 }
