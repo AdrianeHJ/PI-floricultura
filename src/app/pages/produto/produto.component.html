@@ -1,9 +1,9 @@
 <div class="header">
   <div class="logo">
     <a routerLink="">
-        <img src="assets/LogoSemFundo.png" alt="Logo" />
-        Jardim Encantado
-      </a>
+      <img src="assets/LogoSemFundo.png" alt="Logo" />
+      Jardim Encantado
+    </a>
   </div>
   <ul class="nav-lista">
     <li class="imagemlogin">
@@ -12,52 +12,75 @@
       </a>
     </li>
     <li class="nav">
-      <a id="botao-nav" href="#">Buquês</a>
+      <a id="botao-nav" routerLink="">Buquês</a>
       <ul class="dropdown">
-        <li><a routerLink="/buques/rosas">Rosas</a></li>
-        <li><a routerLink="/buques/brancas">Brancas</a></li>
-        <li><a routerLink="/buques/amarelas">Amarelas</a></li>
-        <li><a routerLink="/buques/laranjas">Laranjas</a></li>
-        <li><a routerLink="/buques/lilas">Lilás</a></li>
-        <li><a routerLink="/buques/roxas">Roxas</a></li>
+        <li><a routerLink="">Rosas</a></li>
+        <li><a routerLink="">Brancas</a></li>
+        <li><a routerLink="">Amarelas</a></li>
+        <li><a routerLink="">laranjas</a></li>
+        <li><a routerLink="">lilás</a></li>
+        <li><a routerLink="">roxas</a></li>
       </ul>
     </li>
     <li class="nav">
-      <a id="botao-nav" href="#">Conjuntos</a>
+      <a id="botao-nav" routerLink="">Conjuntos</a>
       <ul class="dropdown">
-        <li><a routerLink="/conjuntos/rosa-branco">Rosa + Branco</a></li>
-        <li><a routerLink="/conjuntos/amarelo-branco">Amarelo + Branco</a></li>
-        <li><a routerLink="/conjuntos/laranja-branco">Laranja + Branco</a></li>
-        <li><a routerLink="/conjuntos/lilas-branco">Lilás + Branco</a></li>
-        <li><a routerLink="/conjuntos/roxo-branco">Roxo + Branco</a></li>
+        <li><a routerLink="">Rosa+branco</a></li>
+        <li><a routerLink="">amarelo+branco</a></li>
+        <li><a routerLink="">laranja+branco</a></li>
+        <li><a routerLink="">lilás+branco</a></li>
+        <li><a routerLink="">roxo+branco</a></li>
       </ul>
     </li>
     <li class="nav">
-      <a id="botao-nav" href="#">Mudas para jardim</a>
+      <a id="botao-nav" routerLink="">Mudas para jardim</a>
       <ul class="dropdown">
-        <li><a routerLink="/mudas/gerbera">Gérbera</a></li>
-        <li><a routerLink="/mudas/iris">Íris</a></li>
-        <li><a routerLink="/mudas/mini-margarida">Mini Margarida</a></li>
-        <li><a routerLink="/mudas/boca-de-leao">Boca de Leão</a></li>
-        <li><a routerLink="/mudas/crisantemo">Crisântemo</a></li>
-        <li><a routerLink="/mudas/hortensia">Hortênsia</a></li>
-        <li><a routerLink="/mudas/tulipa">Tulipa</a></li>
-        <li><a routerLink="/mudas/girassol">Girassol</a></li>
+        <li><a routerLink="">Gérbera</a></li>
+        <li><a routerLink="">Irís</a></li>
+        <li><a routerLink="">Mini margarida</a></li>
+        <li><a routerLink="">boca de leão</a></li>
+        <li><a routerLink="">Crisantemo</a></li>
+        <li><a routerLink="">Hortensia</a></li>
+        <li><a routerLink="">Tulipa</a></li>
+        <li><a routerLink="">Girassol</a></li>
       </ul>
     </li>
     <li class="nav">
-      <a id="botao-nav" routerLink="/personalizado">Personalizado</a>
+      <a id="botao-nav" routerLink="">Personalizado</a>
     </li>
     <li class="imagem">
-      <a routerLink="/carrinho">
+      <a routerLink="/produto">
         <img alt="Carrinho" height="40" width="40" src="assets/carrinho.png" />
       </a>
     </li>
   </ul>
 </div>
 
-<div class="con">
-    sdfvtrgvf
-</div>
+ <main class="produto-container">
+
+        <!-- Imagem do Produto -->
+        <div class="produto-imagem">
+            <img src="assets/tulipa.jpg" alt="Mini Rosa Encantada">
+        </div>
+
+        <!-- Informações do Produto -->
+        <div class="produto-info">
+            <h1>BUQUÊ DE TULIPAS BRANCAS</h1>
+            <p class="preco">R$ 299,90 <span class="parcelamento"> ou 3x de R$ 99,97 sem juros</span></p>
+
+            <hr class= "quebra">
+
+            <h2 class="desc">DESCRIÇÃO:</h2>
+            <p class="descricao">
+                Que tal surpreender quem você ama e presentear com esse lindo buquê de tulipas brancas?
+            </p>
+
+            <!-- Botão Adicionar ao Carrinho -->
+            <button class="btn-carrinho" routerLink="/produto">ADICIONAR AO CARRINHO →
+            </button>
+
+        </div>
+    </main>
+
 
 <app-footer></app-footer>

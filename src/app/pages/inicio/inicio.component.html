@@ -7,49 +7,49 @@
   </div>
   <ul class="nav-lista">
     <li class="imagemlogin">
-      <a href="login">
+      <a routerLink="login">
         <img alt="Login" height="40" width="40" src="assets/Login.png" />
       </a>
     </li>
     <li class="nav">
-      <a id="botao-nav" href="#">Buquês</a>
+      <a id="botao-nav" routerLink="">Buquês</a>
       <ul class="dropdown">
-        <li><a href="#">Rosas</a></li>
-        <li><a href="#">Brancas</a></li>
-        <li><a href="#">Amarelas</a></li>
-        <li><a href="#">laranjas</a></li>
-        <li><a href="#">lilás</a></li>
-        <li><a href="#">roxas</a></li>
+        <li><a routerLink="">Rosas</a></li>
+        <li><a routerLink="">Brancas</a></li>
+        <li><a routerLink="">Amarelas</a></li>
+        <li><a routerLink="">laranjas</a></li>
+        <li><a routerLink="">lilás</a></li>
+        <li><a routerLink="">roxas</a></li>
       </ul>
     </li>
     <li class="nav">
-      <a id="botao-nav" href="#">Conjuntos</a>
+      <a id="botao-nav" routerLink="">Conjuntos</a>
       <ul class="dropdown">
-        <li><a href="#">Rosa+branco</a></li>
-        <li><a href="#">amarelo+branco</a></li>
-        <li><a href="#">laranja+branco</a></li>
-        <li><a href="#">lilás+branco</a></li>
-        <li><a href="#">roxo+branco</a></li>
+        <li><a routerLink="">Rosa+branco</a></li>
+        <li><a routerLink="">amarelo+branco</a></li>
+        <li><a routerLink="">laranja+branco</a></li>
+        <li><a routerLink="">lilás+branco</a></li>
+        <li><a routerLink="">roxo+branco</a></li>
       </ul>
     </li>
     <li class="nav">
-      <a id="botao-nav" href="#">Mudas para jardim</a>
+      <a id="botao-nav" routerLink="">Mudas para jardim</a>
       <ul class="dropdown">
-        <li><a href="#">Gérbera</a></li>
-        <li><a href="#">Irís</a></li>
-        <li><a href="#">Mini margarida</a></li>
-        <li><a href="#">boca de leão</a></li>
-        <li><a href="#">Crisantemo</a></li>
-        <li><a href="#">Hortensia</a></li>
-        <li><a href="#">Tulipa</a></li>
-        <li><a href="#">Girassol</a></li>
+        <li><a routerLink="">Gérbera</a></li>
+        <li><a routerLink="">Irís</a></li>
+        <li><a routerLink="">Mini margarida</a></li>
+        <li><a routerLink="">boca de leão</a></li>
+        <li><a routerLink="">Crisantemo</a></li>
+        <li><a routerLink="">Hortensia</a></li>
+        <li><a routerLink="">Tulipa</a></li>
+        <li><a routerLink="">Girassol</a></li>
       </ul>
     </li>
     <li class="nav">
-      <a id="botao-nav" href="#">Personalizado</a>
+      <a id="botao-nav" routerLink="">Personalizado</a>
     </li>
     <li class="imagem">
-      <a href="carrinho/carrinho.html">
+      <a routerLink="">
         <img alt="Carrinho" height="40" width="40" src="assets/carrinho.png" />
       </a>
     </li>
@@ -62,7 +62,6 @@
 <div class="carrossel-container">
   <div class="carrossel">
     <img src="assets/foto1.carrossel.jpg" alt="Buquês com frete grátis" class="carrossel-imagem" />
-    <img src="assets/foto2.carrossel.jpg" alt="Nova promoção" class="carrossel-imagem" />
   </div>
 
   <div class="letreiro">
@@ -75,7 +74,7 @@
   <div class="titulo">PROMOÇÕES</div>
   <div class="produtos">
     <div class="produto">
-      <a href="produto/prod.html">
+      <a routerLink="/produto">
         <img id="flores" src="assets/tulipa.jpg" alt="buques" width="200px" height="250px" />
       </a>
       <div class="informação">
@@ -87,7 +86,9 @@
       </div>
     </div>
     <div class="produto">
-      <img src="assets/rosa1.jpeg" id="flores" alt="buques" width="200px" height="250px" />
+      <a routerLink="/produto"
+      ><img src="assets/rosa1.jpeg" id="flores" alt="buques" width="200px" height="250px" />
+      </a>
       <div class="informação">
         <h2>Buquê Rosas</h2>
         <h4>Buquê Rosas Pretas</h4>
@@ -97,7 +98,9 @@
       </div>
     </div>
     <div class="produto">
-      <img src="assets/kit2.jpeg" id="flores" alt="buques" width="200px" height="250px" />
+      <a routerLink="/produto">
+        <img src="assets/rosa2.jpeg" id="flores" alt="buques" width="200px" height="250px" />
+      </a>
       <div class="informação">
         <h2>Buquê e Chocolates</h2>
         <h4>Buquê Flores e Chocolates Médios</h4>
@@ -107,7 +110,9 @@
       </div>
     </div>
     <div class="produto">
+      <a routerLink="/produto">
       <img src="assets/kit4.jpeg" id="flores" alt="buques" width="200px" height="250px" />
+      </a>
       <div class="informação">
         <h2>Caixa Presente</h2>
         <h4>Caixa com Rosas Vermelhas e Chocolates</h4>
@@ -122,7 +127,9 @@
   <div class="titulo">MAIS VENDIDOS</div>
   <div class="produtos">
     <div class="produto">
+       <a routerLink="/produto">
       <img src="assets/kit1.jpeg" id="flores" alt="buques" width="200px" height="250px" />
+      </a>
       <div class="informação">
         <h2>Caixa Presente</h2>
         <h4>Caixa Flores Rosas, Balão e Chocolates</h4>
@@ -132,7 +139,9 @@
       </div>
     </div>
     <div class="produto">
+       <a routerLink="/produto">
       <img src="assets/rosa7.jpeg" id="flores" alt="buques" width="200px" height="250px" />
+      </a>
       <div class="informação">
         <h2>Buquê Romântico</h2>
         <h4>Buquê Rosas Vermelhas</h4>
@@ -142,7 +151,9 @@
       </div>
     </div>
     <div class="produto">
+       <a routerLink="/produto">
       <img src="assets/rosa4.jpeg" id="flores" alt="buques" width="200px" height="250px" />
+      </a>
       <div class="informação">
         <h2>Buquê Rosas</h2>
         <h4>Buquê Rosas Pink</h4>
@@ -152,7 +163,9 @@
       </div>
     </div>
     <div class="produto">
+       <a routerLink="/produto">
       <img src="assets/buque0.jpeg" id="flores" alt="buques" width="200px" height="250px" />
+      </a>
       <div class="informação">
         <h2>Buquê Girassol</h2>
         <h4>Buquê Girassol Único</h4>

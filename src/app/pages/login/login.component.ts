@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
   standalone: true,            // necessário para usar `imports`
-  imports: [FormsModule],       // permite [(ngModel)] no template
+  imports: [FormsModule,RouterLink],       // permite [(ngModel)] no template
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
