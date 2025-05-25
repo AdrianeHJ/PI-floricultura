@@ -2,13 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8c1c1;
+    background-color: #fff; 
 }
 
 .header {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffe6f0; 
     padding: 10px;
     text-align: center;
+    border-bottom: 1px solid #f0b6c9; 
 }
 
 .logo {
@@ -23,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: #333; 
     font-size: 24px;
     font-weight: bold;
     padding: 0px;
@@ -52,40 +53,49 @@ body {
     margin-right: 30px;
     position: absolute;
     right: 0;
+    background-color: #f0b6c9; 
+    border: 1px solid #f0b6c9;
 }
 
 .lista {
     display: flex;
     margin-top: 10px;
     gap: 2.9rem;
+    justify-content: center; 
 }
 
 .container {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff; 
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+    text-align: center;
+    
 }
 
 th,
 td,
 caption {
-    border: 1px solid black;
+    border: 1px solid #ab4483; 
     padding: 5px 45px;
     text-align: center;
+    color: #333; 
 }
 
 h3 {
     font-variant: small-caps;
+    color: #ad628a; 
 }
 
 table {
     border-collapse: collapse;
     margin: auto;
+    background-color: #fff; 
 }
 
 .adicionar {
-    background-color: rgb(31, 172, 31);
+    background-color: #73af77; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -93,62 +103,71 @@ table {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
 .adicionar:hover {
-    background-color: rgb(55, 114, 55);
+    background-color: #5fa564; 
 }
 
 .editar {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #f8bbd0; 
+    color: #333;
     padding: 5px 10px;
-    border: none;
+    border: 1px solid #f8bbd0;
     border-radius: 3px;
     cursor: pointer;
     margin-right: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .editar:hover {
-    background-color: #45a049;
+    background-color: #e91e63;
+    color: white;
+    border-color: #e91e63;
 }
 
 .excluir {
-    background-color: #f44336;
-    color: white;
+    background-color: #ffcdd2; 
+    color: #333;
     padding: 5px 10px;
-    border: none;
+    border: 1px solid #ffcdd2;
     border-radius: 3px;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .excluir:hover {
-    background-color: #d32f2f;
+    background-color: #d32f2f; 
+    color: white;
+    border-color: #d32f2f;
 }
 
 .salvar {
-    background-color: #2196F3;
+    background-color: #f06292; 
     color: white;
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
     margin-right: 5px;
+    transition: background-color 0.3s;
 }
 
 .salvar:hover {
-    background-color: #0b7dda;
+    background-color: #b91e52;
 }
 
 .cancelar {
-    background-color: #ff9800;
+    background-color: #f48fb1; 
     color: white;
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .cancelar:hover {
-    background-color: #e68a00;
+    background-color: #e91e63;
 }
