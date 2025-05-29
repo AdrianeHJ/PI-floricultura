@@ -9,6 +9,7 @@ import { Produto } from './types';
 export class ProdutoService {
 
   private readonly API = 'http://localhost:3000/produto';
+  private readonly API_IMAGENS = 'http://localhost:3000/imagens';
 
   constructor(private http:HttpClient) { }
 
@@ -29,5 +30,13 @@ export class ProdutoService {
 
   excluir(id: number): Observable<Produto> {
     return this.http.delete<Produto>(this.API + `/${id}`);
+  }
+
+ listarImagens(): Observable<Produto[]> {
+  return this.http.get<Produto[]>('http://localhost:3000/imagens');
+}
+
+  buscarImagemPorId(id: number): Observable<Produto | undefined> {
+    return this.http.get<Produto>(`${this.API_IMAGENS}/${id}`);
   }
 }

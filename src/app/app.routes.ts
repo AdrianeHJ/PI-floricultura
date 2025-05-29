@@ -43,4 +43,5 @@ export const routes: Routes = [
         component: ProdutoComponent,
         title: 'produto'
     }
+    
 ];
